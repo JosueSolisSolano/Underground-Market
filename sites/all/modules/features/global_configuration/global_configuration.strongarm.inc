@@ -77,7 +77,7 @@ function global_configuration_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cron_last';
-  $strongarm->value = 1448319051;
+  $strongarm->value = 1448395572;
   $export['cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -165,7 +165,7 @@ function global_configuration_strongarm() {
       'views_view' => '51481950e484855939471ec892e071a6',
     ),
     'global_configuration' => array(
-      'variable' => 'e8b207c427e4b5ccaa4d91514d851bb0',
+      'variable' => '87764142d6080a0cd730585d88b7558f',
       'filter' => 'e1ba718b9bb5189bfb3604dcce922498',
       'user_role' => '57d23ee3deb6e9262fa3b2617586b072',
       'user_permission' => '975e88d8c9b694f54dabd063e19839ce',
@@ -410,14 +410,14 @@ function global_configuration_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1448319072;
+  $strongarm->value = 1448395601;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_email_notification';
-  $strongarm->value = 1448293039;
+  $strongarm->value = 1448395572;
   $export['update_last_email_notification'] = $strongarm;
 
   $strongarm = new stdClass();
