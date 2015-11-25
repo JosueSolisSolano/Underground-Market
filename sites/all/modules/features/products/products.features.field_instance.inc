@@ -10,6 +10,152 @@
 function products_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'comment-comment_node_article-comment_body'
+  $field_instances['comment-comment_node_article-comment_body'] = array(
+    'bundle' => 'comment_node_article',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'comment',
+    'field_name' => 'comment_body',
+    'label' => 'Comment',
+    'required' => TRUE,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'comment-comment_node_page-comment_body'
+  $field_instances['comment-comment_node_page-comment_body'] = array(
+    'bundle' => 'comment_node_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'comment',
+    'field_name' => 'comment_body',
+    'label' => 'Comment',
+    'required' => TRUE,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'comment-comment_node_product-comment_body'
+  $field_instances['comment-comment_node_product-comment_body'] = array(
+    'bundle' => 'comment_node_product',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+    ),
+    'entity_type' => 'comment',
+    'field_name' => 'comment_body',
+    'label' => 'Comment',
+    'required' => TRUE,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'comment-comment_node_product-field_rating'
+  $field_instances['comment-comment_node_product-field_rating'] = array(
+    'bundle' => 'comment_node_product',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'fivestar',
+        'settings' => array(
+          'expose' => TRUE,
+          'style' => 'user',
+          'text' => 'user',
+          'widget' => array(
+            'fivestar_widget' => 'default',
+          ),
+        ),
+        'type' => 'fivestar_formatter_default',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'comment',
+    'field_name' => 'field_rating',
+    'label' => 'Rating',
+    'required' => 0,
+    'settings' => array(
+      'allow_clear' => 0,
+      'allow_ownvote' => 1,
+      'allow_revote' => 0,
+      'stars' => 5,
+      'target' => 'parent_node',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'fivestar',
+      'settings' => array(
+        'widget' => array(
+          'fivestar_widget' => 'default',
+        ),
+      ),
+      'type' => 'stars',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'node-product-field_add_to_cart'
   $field_instances['node-product-field_add_to_cart'] = array(
     'bundle' => 'product',
@@ -197,12 +343,13 @@ function products_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'flexslider_fields',
         'settings' => array(
-          'image_link' => '',
+          'caption' => 0,
           'image_style' => '',
+          'optionset' => 'product_slide',
         ),
-        'type' => 'image',
+        'type' => 'flexslider',
         'weight' => 1,
       ),
       'teaser' => array(
@@ -299,6 +446,55 @@ function products_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-product-field_rating'
+  $field_instances['node-product-field_rating'] = array(
+    'bundle' => 'product',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'fivestar',
+        'settings' => array(
+          'expose' => 1,
+          'style' => 'average',
+          'text' => 'average',
+          'widget' => array(
+            'fivestar_widget' => 'default',
+          ),
+        ),
+        'type' => 'fivestar_formatter_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_rating',
+    'label' => 'Rating',
+    'required' => 0,
+    'settings' => array(
+      'allow_clear' => 0,
+      'allow_ownvote' => 1,
+      'allow_revote' => 0,
+      'stars' => 5,
+      'target' => 'none',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'fivestar',
+      'settings' => array(),
+      'type' => 'exposed',
+      'weight' => 9,
+    ),
+  );
+
   // Exported field_instance: 'node-product-field_size'
   $field_instances['node-product-field_size'] = array(
     'bundle' => 'product',
@@ -336,15 +532,65 @@ function products_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-product-field_video'
+  $field_instances['node-product-field_video'] = array(
+    'bundle' => 'product',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'video_embed_field',
+        'settings' => array(
+          'description' => 1,
+          'description_position' => 'bottom',
+          'video_style' => 'normal',
+        ),
+        'type' => 'video_embed_field',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_video',
+    'label' => 'Video',
+    'required' => 0,
+    'settings' => array(
+      'allowed_providers' => array(
+        'vimeo' => 'vimeo',
+        'youtube' => 'youtube',
+      ),
+      'description_field' => 0,
+      'description_length' => 128,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'video_embed_field',
+      'settings' => array(),
+      'type' => 'video_embed_field_video',
+      'weight' => 10,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Add to cart');
   t('Categories');
   t('Color');
+  t('Comment');
   t('Gender');
   t('Image');
   t('Price');
+  t('Rating');
   t('Size');
+  t('Video');
 
   return $field_instances;
 }

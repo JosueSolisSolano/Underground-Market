@@ -10,6 +10,33 @@
 function products_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer flexslider'.
+  $permissions['administer flexslider'] = array(
+    'name' => 'administer flexslider',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'flexslider',
+  );
+
+  // Exported permission: 'administer video styles'.
+  $permissions['administer video styles'] = array(
+    'name' => 'administer video styles',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'video_embed_field',
+  );
+
+  // Exported permission: 'administer voting api'.
+  $permissions['administer voting api'] = array(
+    'name' => 'administer voting api',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'votingapi',
+  );
+
   // Exported permission: 'create product content'.
   $permissions['create product content'] = array(
     'name' => 'create product content',
@@ -43,6 +70,15 @@ function products_user_default_permissions() {
     'name' => 'edit own product content',
     'roles' => array(),
     'module' => 'node',
+  );
+
+  // Exported permission: 'rate content'.
+  $permissions['rate content'] = array(
+    'name' => 'rate content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fivestar',
   );
 
   return $permissions;
