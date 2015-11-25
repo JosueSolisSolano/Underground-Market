@@ -8,9 +8,6 @@
  * Implements hook_ctools_plugin_api().
  */
 function products_ctools_plugin_api($module = NULL, $api = NULL) {
-  if ($module == "context" && $api == "context") {
-    return array("version" => "3");
-  }
   if ($module == "ds" && $api == "ds") {
     return array("version" => "1");
   }
@@ -23,13 +20,6 @@ function products_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "video_embed_field" && $api == "default_video_embed_styles") {
     return array("version" => "1");
   }
-}
-
-/**
- * Implements hook_views_api().
- */
-function products_views_api($module = NULL, $api = NULL) {
-  return array("api" => "3.0");
 }
 
 /**
