@@ -30,6 +30,25 @@ ul.menu {
       text-decoration: none;
     }
   }
+      li.expanded{
+      &:hover{
+          ul.menu{
+            display: block;
+          }
+      }
+      ul.menu{
+        display: none;
+        height: auto;
+        position: absolute;
+        background: #fff;
+        width: 135px;
+        z-index: 3;
+        li{
+          position: relative;
+        }
+      }
+
+    }
 }
 
 .block-menu {
@@ -40,22 +59,21 @@ ul.menu {
   .block-menu h2{
     display: none;
   }
-    .menu{
+    ul.menu{
       display: block;
       text-align: center;
-      height: 50px;
-      margin-right: 100px;
-      margin-left: 30%;
+      height: auto;
       li{
         @include font-size(20);
         display: inline-block;
         width: auto;
         a{
-          margin-right: 20px;
+          margin: 0 20px;
           border-bottom: 1px solid #58C4F9;
         }
       }
     }
+
   }
 
 

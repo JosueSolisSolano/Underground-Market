@@ -24,7 +24,7 @@ html {
 
 body {
   margin: 0;
-  background: url("../img/bg.jpg"); }
+  background: #fff; }
 
 img {
   width: inherit;
@@ -125,6 +125,17 @@ ul.menu {
     ul.menu li a {
       color: #58C4F9;
       text-decoration: none; }
+  ul.menu li.expanded:hover ul.menu {
+    display: block; }
+  ul.menu li.expanded ul.menu {
+    display: none;
+    height: auto;
+    position: absolute;
+    background: #fff;
+    width: 135px;
+    z-index: 3; }
+    ul.menu li.expanded ul.menu li {
+      position: relative; }
 
 .block-menu {
   background: #fff; }
@@ -132,19 +143,17 @@ ul.menu {
 @media (min-width: 600px) {
   .block-menu h2 {
     display: none; }
-  .menu {
+  ul.menu {
     display: block;
     text-align: center;
-    height: 50px;
-    margin-right: 100px;
-    margin-left: 30%; }
-    .menu li {
+    height: auto; }
+    ul.menu li {
       font-size: 20px;
       font-size: 2rem;
       display: inline-block;
       width: auto; }
-      .menu li a {
-        margin-right: 20px;
+      ul.menu li a {
+        margin: 0 20px;
         border-bottom: 1px solid #58C4F9; } }
 
 .node-slide-show .user-picture {
