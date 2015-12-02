@@ -144,31 +144,8 @@ body {
     #block-views-recent-products-block .views-view-grid tbody tr td:last-child {
       margin-right: 0; }
 
-#block-views-categories-list-block h2 {
-  font-size: 20px;
-  font-size: 2rem; }
-
-.node-teaser {
-  border: 2px solid #2a9d8a;
-  color: #2a9d8a;
-  text-align: center;
-  height: auto; }
-  .node-teaser .field-item {
-    margin: 10px 0; }
-
-.add-to-card {
-  font-size: 14px;
-  font-size: 1.4rem;
-  width: 40%;
-  background: #fff;
-  color: #2a9d8a;
-  border: 2px solid #2a9d8a;
-  display: block;
-  padding: 15px 0;
-  margin: 0 auto; }
-  .add-to-card:hover {
-    background: #2a9d8a;
-    color: #fff; }
+.field-name-field-video {
+  text-align: center; }
 
 #site-name {
   display: none; }
@@ -236,6 +213,34 @@ ul.menu {
 
 .node-slide-show h2 a {
   display: none; }
+
+#block-views-categories-list-block {
+  text-align: center; }
+  #block-views-categories-list-block h2 {
+    font-size: 20px;
+    font-size: 2rem; }
+
+.node-teaser {
+  border: 2px solid #2a9d8a;
+  color: #2a9d8a;
+  text-align: center;
+  height: auto; }
+  .node-teaser .field-item {
+    margin: 10px 0; }
+
+.add-to-card {
+  font-size: 14px;
+  font-size: 1.4rem;
+  width: 40%;
+  background: #fff;
+  color: #2a9d8a;
+  border: 2px solid #2a9d8a;
+  display: block;
+  padding: 15px 0;
+  margin: 0 auto; }
+  .add-to-card:hover {
+    background: #2a9d8a;
+    color: #fff; }
 
 .footer {
   background: #2a9d8a; }
