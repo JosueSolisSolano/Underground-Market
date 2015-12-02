@@ -58,7 +58,7 @@ function product_field_default_field_instances() {
           'style' => 'user',
           'text' => 'user',
           'widget' => array(
-            'fivestar_widget' => 'sites/all/modules/fivestar/widgets/outline/outline.css',
+            'fivestar_widget' => 'sites/all/modules/contrid/fivestar/widgets/outline/outline.css',
           ),
         ),
         'type' => 'fivestar_formatter_default',
@@ -82,7 +82,7 @@ function product_field_default_field_instances() {
       'module' => 'fivestar',
       'settings' => array(
         'widget' => array(
-          'fivestar_widget' => 'sites/all/modules/fivestar/widgets/outline/outline.css',
+          'fivestar_widget' => 'sites/all/modules/contrid/fivestar/widgets/outline/outline.css',
         ),
       ),
       'type' => 'stars',
@@ -459,7 +459,7 @@ function product_field_default_field_instances() {
           'style' => 'average',
           'text' => 'average',
           'widget' => array(
-            'fivestar_widget' => 'sites/all/modules/fivestar/widgets/outline/outline.css',
+            'fivestar_widget' => 'sites/all/modules/contrid/fivestar/widgets/outline/outline.css',
           ),
         ),
         'type' => 'fivestar_formatter_default',
