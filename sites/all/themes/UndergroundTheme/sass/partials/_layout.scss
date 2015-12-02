@@ -1,15 +1,71 @@
 //
 // General layout rules
 //
-  .site-logo img{
+.site-logo img{
     width: 250px;
     height: 125px;
 }
 
-  .flexslider {
-    border: none;
+body {
+  @include outer-container;
 }
 
-  #block-views-slide-show-block {
-    display: none;
+.main {
+  @include outer-container;
+}
+
+#block-views-recent-products-block {
+   h2{
+    @include font-size(20);
+  }
+  .views-view-grid tbody{
+    tr{
+      float: none;
+      td{
+        @media (min-width: $mobile){
+          @include span-columns(4);
+          float: left;
+        }
+         @media (min-width: $tablet){
+          @include span-columns(4);
+          float: left;
+        }
+        @include span-columns(12);
+        float: none;
+        text-align: center;
+        color: $light;
+      }
+    }
+
+  }
+}
+
+#block-views-categories-list-block {
+  h2{
+    @include font-size(20);
+  }
+}
+.node-teaser {
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  text-align: center;
+  height: auto;
+  .field-item {
+    margin: 10px 0;
+  }
+}
+
+.add-to-card {
+  @include font-size(14);
+    width: 40%;
+    background: $light;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    display: block;
+    padding: 15px 0;
+    margin: 0 auto;
+  &:hover {
+    background: $primary-color;
+    color: $light;
+  }
 }

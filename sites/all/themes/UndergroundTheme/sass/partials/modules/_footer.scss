@@ -1,0 +1,18 @@
+// footer Styles
+
+.footer {
+  background:$primary-color;
+  h2 {
+    display: none;
+  }
+  p {
+    color: $light;
+    margin: 0 20px;
+    padding: 35px 0;
+  }
+  a {
+    color: $light;
+    float: right;
+    margin: 0 20px;
+  }
+}
