@@ -53,6 +53,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
+h1 {
+  @include font-size(30);
+  color: $primary-color;
+}
+
+h2 {
+  @include font-size(24);
+  color: $primary-color;
+}
 // Tablas
 table {
   width: 100%;

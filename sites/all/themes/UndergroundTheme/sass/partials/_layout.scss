@@ -1,10 +1,7 @@
 //
 // General layout rules
 //
-.site-logo img{
-    width: 250px;
-    height: 125px;
-}
+
 
 body {
   @include outer-container;
@@ -14,10 +11,16 @@ body {
   @include outer-container;
 }
 
+.site-logo img{
+    height: 125px;
+    width: 250px;
+}
+
+#block-views-categories-list-block {
+  text-align: center;
+}
+
 #block-views-recent-products-block {
-   h2{
-    @include font-size(20);
-  }
   .views-view-grid tbody{
     tr{
       float: none;
@@ -31,16 +34,18 @@ body {
           float: left;
         }
         @include span-columns(12);
+        color: $light;
         float: none;
         text-align: center;
-        color: $light;
       }
     }
 
   }
 }
 
-.field-name-field-video {
-  text-align: center;
+iframe {
+  @media (max-width: $mobile){
+    height: 200px;
+    width: 300px;
+  }
 }
-

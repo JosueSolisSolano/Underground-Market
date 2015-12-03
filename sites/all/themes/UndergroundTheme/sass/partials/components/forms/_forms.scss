@@ -2,12 +2,27 @@
 // Global forms
 //
 
+input.form-submit {
+  @include font-size(14);
+    background: $light;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 40%;
+  &:hover {
+    background: $primary-color;
+    color: $light;
+  }
+}
+
 label,
 .webform-container-inline label {
   @include font-size(14);
-  font-weight: bold;
   color: #333;
   display: block;
+  font-weight: bold;
   margin-bottom: 8px;
 }
 
@@ -48,15 +63,15 @@ input[type="radio"] {
 }
 input[type="submit"] {
   border: 0;
+  margin-bottom: 10px;
   outline: 0;
   padding: 8px 25px;
   width: 100%;
-  margin-bottom: 10px;
   @include media(min-width 767px) {
-    width: auto;
     display: inline-block;
-    margin-right: 10px;
     margin-bottom: 0;
+    margin-right: 10px;
+    width: auto;
   }
      -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -72,9 +87,9 @@ input[type="submit"] {
   margin-bottom: 10px;
 }
 .filter-wrapper {
-  border: 0;
   background: #fff;
   border-radius: 5px;
+  border: 0;
 }
 
 // Errors
