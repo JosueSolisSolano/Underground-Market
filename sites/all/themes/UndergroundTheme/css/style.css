@@ -178,6 +178,34 @@ body {
   list-style-type: none;
   list-style-image: none; }
 
+@media (min-width: 640px) {
+  ul.menu {
+    padding-left: 0; }
+    ul.menu li {
+      font-size: 18px;
+      font-size: 1.8rem;
+      list-style-type: normal;
+      list-style: none;
+      margin: 0;
+      max-width: 100%;
+      padding: 5px 0px;
+      text-align: center;
+      text-decoration: none; }
+      ul.menu li a {
+        color: #2a9d8a;
+        text-decoration: none; }
+    ul.menu li.expanded:hover ul.menu {
+      display: block; }
+    ul.menu li.expanded ul.menu {
+      background: #2a9d8a;
+      display: none;
+      height: auto;
+      position: absolute;
+      width: 135px;
+      z-index: 3; }
+      ul.menu li.expanded ul.menu li {
+        position: relative; } }
+
 ul.menu {
   padding-left: 0; }
   ul.menu li {
@@ -193,17 +221,13 @@ ul.menu {
     ul.menu li a {
       color: #2a9d8a;
       text-decoration: none; }
-  ul.menu li.expanded:hover ul.menu {
-    display: block; }
   ul.menu li.expanded ul.menu {
-    background: #2a9d8a;
     display: none;
+    background: #2a9d8a;
     height: auto;
-    position: absolute;
-    width: 135px;
-    z-index: 3; }
-    ul.menu li.expanded ul.menu li {
-      position: relative; }
+    border-bottom: 2px solid #fff; }
+  ul.menu .expand-menu {
+    display: block; }
 
 @media (min-width: 640px) {
   .block-menu h2 {
