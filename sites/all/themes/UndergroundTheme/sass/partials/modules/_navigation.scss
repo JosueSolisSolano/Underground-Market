@@ -3,6 +3,9 @@
 }
 
 #block-system-main-menu {
+  h2{
+    color: $light;
+  }
   background: $primary-color;
   a{
     color: $light;

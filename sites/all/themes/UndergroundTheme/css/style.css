@@ -163,6 +163,8 @@ body {
 
 #block-system-main-menu {
   background: #2a9d8a; }
+  #block-system-main-menu h2 {
+    color: #fff; }
   #block-system-main-menu a {
     color: #fff; }
 
