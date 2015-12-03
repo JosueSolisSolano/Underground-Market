@@ -38,4 +38,4 @@ regions[closure]            = Closure
 stylesheets[all][] = css/style.css
 
 ;-------------- J S -------------
-scripts[] = js/script.min.js
+scripts[] = js/script.js
